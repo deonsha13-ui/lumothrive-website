@@ -8,6 +8,17 @@
       name="description"
       content="Lumothrive is a premium content production agency creating social content, commercial campaigns, brand stories, and creator-led media from scripting to final edit."
     />
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://wa.me" />
+    <!-- Prefetch internal pages for faster navigation -->
+    <link rel="prefetch" href="work.html" />
+    <link rel="prefetch" href="services.html" />
+    <link rel="prefetch" href="culture.html" />
+    <link rel="prefetch" href="contact.html" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="home">
@@ -16,7 +27,7 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="index.html" aria-label="Lumothrive home">
-          <img src="assets/Lumothrive%20Logo.PNG" alt="" />
+          <img src="assets/Lumothrive%20Logo.PNG" alt="Lumothrive Logo" width="28" height="28" />
           <span>Lumothrive</span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -42,6 +53,8 @@
               preload="metadata"
               data-start="4"
               data-end="11"
+              width="1920"
+              height="1080"
               src="assets/Work/AI%20Companies/AI%20Teaser%20-%20Outcome%20Driven%20HQ_.mp4"
             ></video>
             <video
@@ -51,6 +64,8 @@
               preload="metadata"
               data-start="4"
               data-end="13"
+              width="1920"
+              height="1080"
               src="assets/Work/AI%20Companies/Launch%20trailer%20-%20AmpletechAI.mov"
             ></video>
             <div class="hero-scrim"></div>
@@ -107,21 +122,21 @@
           </div>
           <div class="featured-grid">
             <article class="work-card large reveal hover-media" data-cursor="Play">
-              <video muted playsinline loop preload="metadata" src="assets/Work/AI%20Companies/AI%20Trailer%20-%20Outcome%20Driven%20HQ.mp4"></video>
+              <video muted playsinline loop preload="metadata" width="1280" height="1280" src="assets/Work/AI%20Companies/AI%20Trailer%20-%20Outcome%20Driven%20HQ.mp4"></video>
               <div>
                 <span>AI / Tech</span>
                 <h3>Outcome Driven HQ</h3>
               </div>
             </article>
             <article class="work-card reveal hover-media" data-cursor="Play">
-              <video muted playsinline loop preload="metadata" src="assets/Work/Restaurant/Madras%20majestic%20reel.mp4"></video>
+              <video muted playsinline loop preload="metadata" width="720" height="720" src="assets/Work/Restaurant/Madras%20majestic%20reel.mp4"></video>
               <div>
                 <span>Hospitality</span>
                 <h3>Madras Majestic</h3>
               </div>
             </article>
             <article class="work-card reveal hover-media" data-cursor="Play">
-              <video muted playsinline loop preload="metadata" src="assets/Work/Personal%20Brands/Premium%20Storytelling%20Edit.mp4"></video>
+              <video muted playsinline loop preload="metadata" width="720" height="720" src="assets/Work/Personal%20Brands/Premium%20Storytelling%20Edit.mp4"></video>
               <div>
                 <span>Personal Brand</span>
                 <h3>Premium Storytelling Edit</h3>
@@ -204,12 +219,12 @@
           </div>
           <div class="article-grid">
             <article class="article-card reveal magnetic-soft">
-              <img src="assets/VYZN/article-01.png" alt="" />
+              <img src="assets/VYZN/article-01.png" alt="Why premium social content needs both speed and taste" width="600" height="400" loading="lazy" />
               <span>Production</span>
               <h3>Why premium social content needs both speed and taste.</h3>
             </article>
             <article class="article-card reveal magnetic-soft">
-              <img src="assets/VYZN/article-02.png" alt="" />
+              <img src="assets/VYZN/article-02.png" alt="How founder-led and brand-led content can live in the same system" width="600" height="400" loading="lazy" />
               <span>Strategy</span>
               <h3>How founder-led and brand-led content can live in the same system.</h3>
             </article>
@@ -227,7 +242,7 @@
         </section>
 
         <section class="cta-section cta-media-section">
-          <video class="cta-bg-video" muted playsinline autoplay loop src="assets/VYZN/footer-cta-video.mp4"></video>
+          <video class="cta-bg-video" muted playsinline autoplay loop width="1920" height="1080" src="assets/VYZN/footer-cta-video.mp4"></video>
           <div class="cta-media-scrim"></div>
           <div class="reveal reveal-clip">
             <p class="eyebrow">Start a Project</p>
@@ -254,6 +269,6 @@
         <p>Copyright 2026 Lumothrive. Premium content production agency.</p>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
