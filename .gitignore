@@ -1,0 +1,3 @@
+.agents/
+private-*.txt
+deploy-to-github.ps1
